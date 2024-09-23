@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="labels">
+    <% contentsList.forEach(function (part){ %>
+      <div class="label">
+        <div class="label-text">
+          <p class="description"><%= part.description %></p>
+          <p class="part-number"><%= part.partNumber %></p>
+        </div>
+        <img src="images/<%= part.hash %>.png" onerror="this.style.display='none';">
+      </div>
+    <% }); %>
+  </div>
+</body>
+</html>
+
