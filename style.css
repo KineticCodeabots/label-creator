@@ -1,22 +1,23 @@
 * {
   font-family: sans-serif;
-  font-size: 10px;
+  font-size: 14px;
 }
 .label {
-  width: 6cm;
-  height: 1.5cm;
-  border: black 1px solid;
+  width: 6.2cm;
+  height: 1.6cm;
+  border: black 2px solid;
   /* overflow: hidden; */
   display: flex;
   justify-content: space-between;
-
+  overflow: hidden;
 }
 .label-text  {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-   margin-top: 8px; 
+  margin-top: 5px; 
   margin-left: 5px; 
+  margin-bottom: 3px;
 }
 .description {
   font-size: 1em;
@@ -30,10 +31,16 @@
   font-size: 0.7em;
   /* font-weight:; */
   color: #333;
+  margin: 0;
 }
 .label img {
   margin-right: 5px;
   z-index: -10;
+  /* width: 100%; */
+  height: auto;
+  max-height: 100%;
+  /* object-fit: cover; Ensures image covers the area, cropping if necessary */
+  /* aspect-ratio: 1 / 1; */
 }
 .labels {
   display: flex;
