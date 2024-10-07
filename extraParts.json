@@ -1,42 +1,41 @@
 {
-  "done": [
-    {
-      "description": "M3 Washer",
-      "partNumber": "",
-      "hash": "m3washer"
-    },
-    {
-      "description": "Switch Cable and Bracket",
-      "partNumber": "REV-31-1387",
-      "hash": "cablebracket"
-    },
-    {
-      "description": "Color Sensor V3",
-      "partNumber": "REV-31-1557",
-      "hash": "colorsensor"
-    },
-    {
-      "description": "2m Distance Sensor",
-      "partNumber": "REV-31-1505",
-      "hash": "distancesensor"
-    },
-    {
-      "partNumber": "REV-41-1337",
-      "description": "90 Tooth Plastic Gear",
-      "hash": "5b1c3434a4183c0be719d005f03cf5a43e3f66f0f2239249e1de4926e50e2e38"
-    }
-  ],
-  "list": [
-    {
-        "description": "M3 Socket Cap Screws"
-      },
-      {
-        "description": "Zip Ties",
-        "partNumber": "REV-41-1161",
-        "hash": "zipties"
-      },
-      {
-        "description": "Misc"
-      }
-  ]
+	"done": [],
+	"list": [
+		{
+			"description": "M3 Socket Cap Screws"
+		},
+		{
+			"description": "Zip Ties",
+			"partNumber": "REV-41-1161",
+			"hash": "zipties"
+		},
+		{
+			"description": "Misc"
+		},
+		{
+			"description": "M3 Washer",
+			"partNumber": "",
+			"hash": "m3washer"
+		},
+		{
+			"description": "Switch Cable and Bracket",
+			"partNumber": "REV-31-1387",
+			"hash": "cablebracket"
+		},
+		{
+			"description": "Color Sensor V3",
+			"partNumber": "REV-31-1557",
+			"hash": "colorsensor"
+		},
+		{
+			"description": "2m Distance Sensor",
+			"partNumber": "REV-31-1505",
+			"hash": "distancesensor"
+		},
+		{
+			"partNumber": "REV-41-1337",
+			"description": "90 Tooth Plastic Gear",
+			"hash": "5b1c3434a4183c0be719d005f03cf5a43e3f66f0f2239249e1de4926e50e2e38"
+		}
+	]
 }
