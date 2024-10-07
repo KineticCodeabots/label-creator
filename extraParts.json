@@ -36,6 +36,69 @@
 			"partNumber": "REV-41-1337",
 			"description": "90 Tooth Plastic Gear",
 			"hash": "5b1c3434a4183c0be719d005f03cf5a43e3f66f0f2239249e1de4926e50e2e38"
+		},
+		{
+			"partNumber": "",
+			"description": "Misc Screws"
+		},
+		{
+			"partNumber": "",
+			"description": "25mm Screw"
+		},
+		{
+			"partNumber": "",
+			"description": "M3 x 40mm Socket Cap Screws"
+		}, {
+			"partNumber": "",
+			"description": "M3 x 10mm Socket Cap Screws"
+		},
+		{
+			"partNumber": "",
+			"description": "M3 x 20mm Socket Cap Screws"
+		},
+		{
+			"partNumber": "REV-41-1097",
+			"description": "SRS Accompanying Gears",
+			"hash": "accompanying-gears-noflag__91372"
+		},
+		{
+			"partNumber": "REV-31-1418",
+			"description": "JST PH 3-pin Communication Cables",
+			"hash": "JST_PH_3-Pin_Comm__91198"
+		},
+		{
+			"partNumber": "REV-31-1381",
+			"description": "Anderson to JST VH Cable",
+			"hash": "AA_15mm_Metal_Servo_Bracket__15222"
+		}, {
+			"partNumber": "REV-11-1232",
+			"description": "USB-A to USB-C",
+			"hash": "USBA_to_USBC_2.0_Cable__29203"
+		},
+		{
+			"partNumber": "",
+			"description": "USB OTG Cable & USB Hub",
+			"hash": "usbotg"
+		},
+		{
+			"partNumber": "REV-31-1382-PK2",
+			"description": "Tamiya to XT30 Adapter",
+			"hash": "Tamiya_to_XT30_Adapter_REV-31-1382_2__87926"
+		},
+		{
+			"partNumber": "REV-31-1413",
+			"description": "JST VH 2-pin Motor Cables",
+			"hash": "REV-31-1413-JSTVH-Hero-FINAL__66749 (1)"
+		},
+		{
+			"partNumber": "",
+			"description": "USB-A to USB Mini Cable",
+			"hash": "3_meter_mini_USB_to_USB_Cable"
+		},
+		{
+			"partNumber": "REV-11-1130",
+			"description": "36in PWM Cable",
+			"hash": "REV-11-1130_PWM-Cable-2-Alicia-FINAL__80872"
 		}
 	]
 }
