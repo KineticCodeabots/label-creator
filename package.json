@@ -1,0 +1,26 @@
+{
+	"name": "label-creator",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "concurrently \"npm run server:dev\" \"npm run client:dev\"",
+		"client:dev": "vite",
+		"server:dev": "nodemon src/backend/app.js",
+		"client:build": "vite build",
+		"build": "npm run client:build",
+		"serve": "vite preview",
+		"start": "node src/backend/app.js"
+	},
+	"devDependencies": {
+		"@sveltejs/vite-plugin-svelte": "^3.1.2",
+		"concurrently": "^9.0.1",
+		"nodemon": "^3.1.7",
+		"svelte": "^4.2.19",
+		"vite": "^5.4.8"
+	},
+	"dependencies": {
+		"express": "^4.21.1",
+		"multer": "1.4.5-lts.1"
+	}
+}
