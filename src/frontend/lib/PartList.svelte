@@ -49,9 +49,12 @@
 	}
 </script>
 
-<button on:click={save} disabled={saving}>Save</button>
-<button on:click={add}>Add</button>
-<button on:click={startRemoving}>Remove</button>
+<div class="controls">
+	<button on:click={save} disabled={saving}>Save</button>
+	<button class="add" on:click={add}>Add</button>
+	<button class="remove" on:click={startRemoving}>Remove</button>
+	<button>Print</button>
+</div>
 
 <div class="part-list">
 	{#each listData.list as part}
@@ -64,5 +67,32 @@
 	.part-list {
 		display: flex;
 		flex-wrap: wrap;
+	}
+	.controls {
+		display: flex;
+		gap: 10px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	button {
+		padding: 10px 15px;
+		border: none;
+		background-color: #007bff;
+		color: white;
+		cursor: pointer;
+		border-radius: 5px;
+	}
+
+	button:disabled {
+		background-color: #cccccc;
+		cursor: not-allowed;
+	}
+
+	.add {
+		background-color: #28a745;
+	}
+	.remove {
+		background-color: #dc3545;
 	}
 </style>

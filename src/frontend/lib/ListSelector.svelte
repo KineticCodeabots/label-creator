@@ -16,3 +16,19 @@
 		<option value={list}>{list}</option>
 	{/each}
 </select>
+
+<style>
+	#list-select {
+		min-width: 100px;
+		padding: 8px;
+		font-size: 16px;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+	}
+
+	#list-select:focus {
+		border-color: #007bff;
+		outline: none;
+		box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+	}
+</style>
