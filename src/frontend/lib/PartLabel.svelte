@@ -3,6 +3,8 @@
 	$: console.log("Part changed", part);
 	export let removing = false;
 
+	const id = Math.random().toString(36).substring(7);
+
 	function handleImageUpload(event) {
 		const file = event.target.files[0];
 		if (file) {
@@ -19,21 +21,26 @@
 
 <!-- svelte-ignore a11y-click-events-have-key-events -->
 <!-- svelte-ignore a11y-no-static-element-interactions -->
-<div
-	class="part-label {removing ? 'removing' : ''}"
-	on:click|capture|preventDefault
->
+<div class="part-label {removing ? 'removing' : ''}" on:click|capture>
 	<div class="text-container">
-		<p class="name" contenteditable bind:textContent={part.name}></p>
+		<p
+			class="name"
+			spellcheck="false"
+			contenteditable
+			bind:textContent={part.name}
+		></p>
 		<p
 			class="part-number"
+			spellcheck="false"
 			contenteditable
 			bind:textContent={part.partNumber}
 		></p>
 	</div>
-	<label for="image-upload" class="image-container"
+	<label for={id} class="image-container"
 		><img
-			src={"images/" + part.image}
+			src={part.image.startsWith("data:")
+				? part.image
+				: "images/" + part.image}
 			alt={part.name}
 			on:load={(e) => {
 				// @ts-ignore
@@ -44,7 +51,8 @@
 
 	<input
 		type="file"
-		id="image-upload"
+		{id}
+		class="image-upload"
 		accept="image/*"
 		on:change={handleImageUpload}
 	/>
@@ -102,9 +110,10 @@
 		height: 100%;
 		object-fit: contain;
 		display: none;
+		aspect-ratio: 1/1;
 	}
 
-	#image-upload {
+	.image-upload {
 		display: none;
 	}
 </style>

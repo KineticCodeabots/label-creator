@@ -13,12 +13,6 @@ const app = express();
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// Set EJS as the view engine
-app.set("view engine", "ejs");
-
-// Specify the location of your views (EJS files)
-app.set("views", path.join(__dirname, "../frontend/views"));
-
 // Route to render an EJS template
 app.get("/", async (req, res) => {
 	res.render("index", {

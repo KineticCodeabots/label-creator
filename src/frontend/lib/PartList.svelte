@@ -40,8 +40,9 @@
 	function startRemoving() {
 		removing = !removing;
 	}
-	function labelClicked(part) {
+	function labelClicked(event, part) {
 		if (removing) {
+			event.preventDefault();
 			listData.list = listData.list.filter((p) => p !== part);
 			listData = listData;
 			removing = false;
@@ -58,7 +59,10 @@
 
 <div class="part-list">
 	{#each listData.list as part}
-		<PartLabel bind:part {removing} on:click={() => labelClicked(part)}
+		<PartLabel
+			bind:part
+			{removing}
+			on:click={(event) => labelClicked(event, part)}
 		></PartLabel>
 	{/each}
 </div>
