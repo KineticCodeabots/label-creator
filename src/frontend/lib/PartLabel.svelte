@@ -1,5 +1,6 @@
 <script>
 	export let part;
+	export let autocrop = false;
 	$: console.log("Part changed", part);
 	export let removing = false;
 
@@ -40,7 +41,7 @@
 		><img
 			src={part.image.startsWith("data:")
 				? part.image
-				: "images/" + part.image}
+				: (autocrop ? "api/autocrop/" : "api/images/") + part.image}
 			alt={part.name}
 			on:load={(e) => {
 				// @ts-ignore
@@ -70,6 +71,7 @@
 		display: flex;
 		justify-content: space-between;
 		overflow: hidden;
+		page-break-inside: avoid;
 	}
 	.part-label.removing {
 		background-color: #fdd;

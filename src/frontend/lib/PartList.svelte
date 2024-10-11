@@ -48,19 +48,26 @@
 			removing = false;
 		}
 	}
+
+	let autocrop = false;
 </script>
 
-<div class="controls">
+<div class="controls print-hide">
 	<button on:click={save} disabled={saving}>Save</button>
 	<button class="add" on:click={add}>Add</button>
 	<button class="remove" on:click={startRemoving}>Remove</button>
-	<button>Print</button>
+	<button on:click={() => window.print()}>Print</button>
+	<div class="autocrop-control">
+		<label for="autocrop">Auto Crop</label>
+		<input type="checkbox" id="autocrop" bind:checked={autocrop} />
+	</div>
 </div>
 
-<div class="part-list">
+<div class="part-list" data-listname={listName}>
 	{#each listData.list as part}
 		<PartLabel
 			bind:part
+			{autocrop}
 			{removing}
 			on:click={(event) => labelClicked(event, part)}
 		></PartLabel>
@@ -98,5 +105,10 @@
 	}
 	.remove {
 		background-color: #dc3545;
+	}
+	.autocrop-control {
+		display: flex;
+		align-items: center; /* Ensures the label and checkbox are aligned */
+		gap: 5px;
 	}
 </style>

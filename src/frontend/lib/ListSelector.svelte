@@ -5,6 +5,7 @@
 </script>
 
 <select
+	class="print-hide"
 	id="list-select"
 	on:change={() => (firstOptionSelected = true)}
 	bind:value={selectedList}

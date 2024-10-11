@@ -1,6 +1,10 @@
 import express from "express";
 import { getList, getLists, updateList } from "./lists.js";
 import multer from "multer";
+import mime from "mime-types";
+import sharp from "sharp";
+import path from "path";
+import fs from "fs";
 
 const router = express.Router();
 router.get("/lists", async (req, res) => {
@@ -58,5 +62,34 @@ router.post("/images", upload.single("file"), (req, res) => {
 });
 
 router.use("/images", express.static("images"));
+
+// create api endpoint "/autocrop" that serves images folder but applies a filter on it
+router.get("/autocrop/:filename", async (req, res) => {
+	const filename = req.params.filename;
+	const imagePath = path.join("images", filename);
+
+	// Check if the image exists
+	if (!fs.existsSync(imagePath)) {
+		return res.status(404).send("Image not found");
+	}
+
+	try {
+		// Read the image, trim it using sharp, and send the modified image as a response
+		const trimmedImage = await sharp(imagePath)
+			.trim({
+				threshold: 10,
+			})
+			.toBuffer();
+
+		// Set the correct headers and send the image as the response
+		res.set("Content-Type", mime.lookup(imagePath));
+		res.send(trimmedImage);
+	} catch (err) {
+		console.error(err);
+		res.status(500).send({
+			error: "Internal server error",
+		});
+	}
+});
 
 export default router;
