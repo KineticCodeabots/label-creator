@@ -37,11 +37,13 @@
 			bind:textContent={part.partNumber}
 		></p>
 	</div>
-	<label for={id} class="image-container"
+	<label for={id} class="image-container {part.image ? '' : 'no-image'}"
 		><img
-			src={part.image.startsWith("data:")
-				? part.image
-				: (autocrop ? "api/autocrop/" : "api/images/") + part.image}
+			src={part.image
+				? part.image.startsWith("data:")
+					? part.image
+					: (autocrop ? "api/autocrop/" : "api/images/") + part.image
+				: ""}
 			alt={part.name}
 			on:load={(e) => {
 				// @ts-ignore
@@ -117,5 +119,10 @@
 
 	.image-upload {
 		display: none;
+	}
+	@media print {
+		.no-image {
+			display: none;
+		}
 	}
 </style>
