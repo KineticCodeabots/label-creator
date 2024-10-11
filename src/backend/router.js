@@ -75,9 +75,21 @@ router.get("/autocrop/:filename", async (req, res) => {
 
 	try {
 		// Read the image, trim it using sharp, and send the modified image as a response
-		const trimmedImage = await sharp(imagePath)
+		const image = sharp(imagePath);
+		const metadata = await image.metadata();
+		const trimmedImage = await sharp(
+			await image
+				.extract({
+					left: 1,
+					top: 1,
+					width: metadata.width - 2,
+					height: metadata.height - 2,
+				})
+				.toBuffer()
+		)
 			.trim({
-				threshold: 10,
+				// background: sampledColor,
+				threshold: 15,
 			})
 			.toBuffer();
 
