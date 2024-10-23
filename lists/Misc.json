@@ -49,6 +49,11 @@
       "name": "USB-A to USB Mini Cable",
       "partNumber": "",
       "image": "3_meter_mini_USB_to_USB_Cable.png"
+    },
+    {
+      "name": "Swingarm Odometry Pod (48mm Wheel)",
+      "partNumber": "3110-0001-0001",
+      "image": "Ang2__02814__87219.jpg"
     }
   ]
 }
