@@ -568,6 +568,16 @@
       "name": "Driver Hub",
       "partNumber": "REV-31-1596",
       "image": "REV-31-1596-Driver_Hub-Iso_View-FINAL__03867.png"
+    },
+    {
+      "name": "HD Hex Motor 20:1 Planetary Gearbox",
+      "partNumber": "REV-41-1211",
+      "image": "HDHex-20_to_1_Planetary-New_Sticker__65970 (1).png"
+    },
+    {
+      "name": "75mm Mecanum Wheel Set",
+      "partNumber": "REV-45-1655",
+      "image": "75mm_Mecanum_Wheel_Set_Main_Solo__97065.png"
     }
   ]
 }
