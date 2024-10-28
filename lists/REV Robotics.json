@@ -475,11 +475,6 @@
       "image": "UltraPlanetary_Hardware_Pack_REV-41-1609__79486.png"
     },
     {
-      "name": "JST VH 2-Pin Motor Cable - 50 cm",
-      "partNumber": "REV-31-1413",
-      "image": "REV-31-1413-JSTVH-Hero-FINAL__66749.png"
-    },
-    {
       "name": "JST PH 4-Pin Sensor Cable - 50 cm",
       "partNumber": "REV-31-1408",
       "image": "JST_PH_4pin_30cm_REV-31-1407__92491.png"
@@ -558,6 +553,21 @@
       "name": "XT30 Extension Cables",
       "partNumber": "REV-31-1392",
       "image": "XT30_extension__07089.jpg"
+    },
+    {
+      "name": "Anderson Power Pole to XT30 Adapter",
+      "partNumber": "REV-31-1385",
+      "image": "AA_Anderson_Power_Pole_Style_to_XT30_Adapter__74498.png"
+    },
+    {
+      "name": "Touch Sensor",
+      "partNumber": "REV-31-1425",
+      "image": "Button_Sensor_REV-31-1425_2_not_lm__15755.png"
+    },
+    {
+      "name": "Driver Hub",
+      "partNumber": "REV-31-1596",
+      "image": "REV-31-1596-Driver_Hub-Iso_View-FINAL__03867.png"
     }
   ]
 }

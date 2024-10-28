@@ -8,3 +8,7 @@
 		display: none !important;
 	}
 }
+
+[data-listname="TETRIX"] .part-label {
+	background-color: #ffff95;
+}

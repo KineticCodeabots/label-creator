@@ -89,7 +89,7 @@ router.get("/autocrop/:filename", async (req, res) => {
 		)
 			.trim({
 				// background: sampledColor,
-				threshold: 15,
+				threshold: 30,
 			})
 			.toBuffer();
 

@@ -279,6 +279,16 @@
       "name": "NeveRest 40 Gearmotor",
       "partNumber": "am-2964a",
       "image": "Front.jpg"
+    },
+    {
+      "name": "JST-XHP-4 to 4 0.1 in. Pin Connector Cable",
+      "partNumber": "am-2992",
+      "image": "am-2992_4.jpg"
+    },
+    {
+      "name": "Rack and Pinion Linear Slide",
+      "partNumber": "39300",
+      "image": "39300_featured.webp"
     }
   ]
 }
