@@ -6,7 +6,7 @@
 	"scripts": {
 		"dev": "concurrently \"npm run server:dev\" \"npm run client:dev\"",
 		"client:dev": "vite",
-		"server:dev": "nodemon src/backend/app.js",
+		"server:dev": "nodemon --watch src/backend src/backend/app.js",
 		"client:build": "vite build",
 		"build": "npm run client:build",
 		"serve": "vite preview",
