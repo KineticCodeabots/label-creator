@@ -578,6 +578,26 @@
       "name": "75mm Mecanum Wheel Set",
       "partNumber": "REV-45-1655",
       "image": "75mm_Mecanum_Wheel_Set_Main_Solo__97065.png"
+    },
+    {
+      "name": "1.2mm UHMWPE Cord",
+      "partNumber": "REV-41-1162",
+      "image": "REV-41-1162-1.2mm-UHMWPE-Cord-FINAL__82457.png"
+    },
+    {
+      "name": "15mm Linear Motion Kit V2",
+      "partNumber": "REV-45-1507",
+      "image": "Linear_Motion__71955.png"
+    },
+    {
+      "name": "Resistive Grounding Strap",
+      "partNumber": "REV-31-1269",
+      "image": "REV-31-1269-ResistiveGroundingStrap__52320.png"
+    },
+    {
+      "name": "Ferrite Cable Clip",
+      "partNumber": "REV-39-1224",
+      "image": "Ferrite_Clips_Pile__89855.png"
     }
   ]
 }
